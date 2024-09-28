@@ -1,0 +1,70 @@
+[
+    {
+      "nombre_propuesta": "Desarrollador Backend",
+      "imagen_empresa": "https://empresa1.com/logo.png",
+      "nombre_empresa": "Tech Solutions",
+      "modalidad_trabajo": "Remoto",
+      "otro_agregado": "Experiencia con Python y Django"
+    },
+    {
+      "nombre_propuesta": "Diseñador UI/UX",
+      "imagen_empresa": "https://empresa2.com/logo.png",
+      "nombre_empresa": "Creative Minds",
+      "modalidad_trabajo": "Presencial",
+      "otro_agregado": "Conocimiento avanzado en Figma"
+    },
+    {
+      "nombre_propuesta": "Analista de Datos",
+      "imagen_empresa": "https://empresa3.com/logo.png",
+      "nombre_empresa": "Data Insights",
+      "modalidad_trabajo": "Híbrido",
+      "otro_agregado": "Experiencia en SQL y Power BI"
+    },
+    {
+      "nombre_propuesta": "Ingeniero DevOps",
+      "imagen_empresa": "https://empresa4.com/logo.png",
+      "nombre_empresa": "Cloud Masters",
+      "modalidad_trabajo": "Remoto"
+    },
+    {
+      "nombre_propuesta": "Gerente de Proyectos",
+      "imagen_empresa": "https://empresa5.com/logo.png",
+      "nombre_empresa": "Business Experts",
+      "modalidad_trabajo": "Presencial",
+      "otro_agregado": "Certificación PMP requerida"
+    },
+    {
+      "nombre_propuesta": "Desarrollador Frontend",
+      "imagen_empresa": "https://empresa6.com/logo.png",
+      "nombre_empresa": "Web Innovators",
+      "modalidad_trabajo": "Remoto",
+      "otro_agregado": "Conocimientos en React y Vue.js"
+    },
+    {
+      "nombre_propuesta": "Administrador de Sistemas",
+      "imagen_empresa": "https://empresa7.com/logo.png",
+      "nombre_empresa": "IT Solutions",
+      "modalidad_trabajo": "Híbrido"
+    },
+    {
+      "nombre_propuesta": "Especialista en Marketing Digital",
+      "imagen_empresa": "https://empresa8.com/logo.png",
+      "nombre_empresa": "Digital Boost",
+      "modalidad_trabajo": "Remoto",
+      "otro_agregado": "Experiencia en SEO y SEM"
+    },
+    {
+      "nombre_propuesta": "Soporte Técnico",
+      "imagen_empresa": "https://empresa9.com/logo.png",
+      "nombre_empresa": "Support Team",
+      "modalidad_trabajo": "Presencial"
+    },
+    {
+      "nombre_propuesta": "Científico de Datos",
+      "imagen_empresa": "https://empresa10.com/logo.png",
+      "nombre_empresa": "AI Solutions",
+      "modalidad_trabajo": "Remoto",
+      "otro_agregado": "Experiencia en machine learning"
+    }
+  ]
+  
