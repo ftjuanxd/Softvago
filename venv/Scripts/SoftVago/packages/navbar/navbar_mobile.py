@@ -29,10 +29,10 @@ def sidebar_item(
 
 def sidebar_items() -> rx.Component:
     return rx.vstack(
-        sidebar_item("Home", "library-big", "/#"),
-        sidebar_item("Job Listings", "text-search", "/#"),
-        sidebar_item("Sign In", "log-in", "/#"),
-        sidebar_item("Sign Up", "user-plus", "/#"),
+        sidebar_item("Home", "library-big", "/"),
+        sidebar_item("Job Listings", "text-search", "/job"),
+        sidebar_item("Sign In", "log-in", "/"),
+        sidebar_item("Sign Up", "user-plus", "/job"),
         spacing="1", 
         width="100%",
     )
