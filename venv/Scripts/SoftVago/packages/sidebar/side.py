@@ -9,9 +9,10 @@ class InputContent(rx.State):
 
 def content(text_value: str):
     return rx.vstack(
-        rx.text(text_value,size="4",weight="medium",padding_top="5px"),
-        rx.cond(
-            text_value == "Word Mode",
+        rx.text(text_value, size="4", weight="medium", padding_top="5px"),
+        rx.match(
+            text_value,
+            ("Work Mode",
                 rx.radio(
                     ["On-Site", "Remote", "Hybrid"],
                     direction="column",
@@ -19,22 +20,25 @@ def content(text_value: str):
                     size="4",
                     weight="medium",
                     variant="surface",
-                    color_scheme="blue"
-                ),
-                rx.cond(
-                    rx.slider(
-                        default_value=[1000000,2400000],
-                        width="100%",
-                        min=1000000,
-                        max=4000000,
-                        color_scheme="blue",
-                        bg="gray"
-                    ),
-                    rx.input(placeholder=f"Enter {text_value}")
+                    color_scheme="blue",
+                    width="100%",
                 )
-        )
+            ),
+            ("Salary Range",
+                rx.slider(
+                    default_value=[1000000, 2400000],
+                    min=1000000,
+                    max=4000000,
+                    color_scheme="blue",
+                    bg="gray",
+                    width="100%"
+                )
+            ),
+            rx.input(placeholder=f"Enter {text_value}", width="100%"),
+        ),
+        width="100%",
     )
-    
+
 def InputState():
     return rx.foreach(InputContent.content, content)
 
@@ -46,40 +50,8 @@ def sidebar() -> rx.Component:
                         rx.heading(
                             "Filter Jobs", size="7", weight="bold",
                         ),
-                        rx.text("Location",size="4",weight="medium"),
 
-                        rx.input(placeholder="Enter Location"),
-                        
-                        rx.text("Work Mode", size="4", weight="medium"),
-                              
-                        rx.radio(
-                            ["On-Site", "Remote", "Hybrid"],
-                            direction="column",
-                            spacing="2",
-                            size="4",
-                            weight="medium",
-                            variant="surface",
-                            color_scheme="blue"
-                        ),
-
-                        rx.text("Salary Range", size="4", weight="medium"),
-
-                         rx.slider(
-                            default_value=[1000000,2400000],
-                            width="100%",
-                            min=1000000,
-                            max=4000000,
-                            color_scheme="blue",
-                            bg="gray"
-                        ),
-
-                        rx.text("Avalibe Range", size="4", weight="medium"),
-
-                        rx.input(placeholder="10"),
-                        
-                        rx.text("Position", size="4", weight="medium"),
-
-                        rx.input(placeholder="10"),
+                        InputState(),
 
                         rx.button("Apply Filters", on_click=rx.window_alert("Get Started")),
 
