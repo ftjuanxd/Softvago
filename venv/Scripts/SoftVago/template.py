@@ -10,7 +10,7 @@ def template(page:Callable[[],rx.Component]) -> rx.Component:
     return rx.vstack(
         nv.navbar(),
         rx.vstack(
-            page()
+            page(),
         ),
         ft.footer(),
         width="100%"
