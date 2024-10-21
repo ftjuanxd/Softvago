@@ -23,7 +23,7 @@ def navbar_pc() -> rx.Component:
                 rx.hstack(
                     navbar_link("Home", "/"),
                     navbar_link("Job Listings", "/job"),
-                    navbar_link("Sign In", "/"),
+                    navbar_link("Sign In", "/Sign-in"),
                     navbar_link("Sign Up", "/job"),
                     justify="end",
                     spacing="5",

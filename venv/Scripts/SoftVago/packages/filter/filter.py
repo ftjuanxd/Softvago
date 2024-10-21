@@ -1,6 +1,6 @@
 import reflex as rx
 
-from .Style import style_filter as sf
+from ..Style import style_component as sf
 
 # Crear la interfaz de usuario
 def filter():

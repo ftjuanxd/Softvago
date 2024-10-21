@@ -11,7 +11,8 @@ def cards(propuesta="Analista de Datos",img="/fondo.jpg",empresa="Google",locati
                     src=img,
                     width="70%",
                     height="auto",
-                    border_radius="6px"
+                    border_radius="10px",
+                    padding_right="25px"
                 ),
                 rx.flex(
                     rx.heading(propuesta, size="4", mb="1",color="#1E3A8A"),

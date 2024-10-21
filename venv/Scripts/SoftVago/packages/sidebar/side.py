@@ -1,7 +1,7 @@
 import reflex as rx
 
 #Estilos de la web
-from ...Style import style
+from ..Style import style_component as st
 
 class InputContent(rx.State):
 
@@ -19,7 +19,7 @@ def content(text_value: str):
                     spacing="2",
                     size="4",
                     weight="medium",
-                    variant="surface",
+                    variant="soft",
                     color_scheme="blue",
                     width="100%",
                 )
@@ -34,7 +34,7 @@ def content(text_value: str):
                     width="100%"
                 )
             ),
-            rx.input(placeholder=f"Enter {text_value}", width="100%"),
+            rx.input(placeholder=f"Enter {text_value}", width="100%", style=st.style_input_Side),
         ),
         width="100%",
     )
@@ -53,20 +53,19 @@ def sidebar() -> rx.Component:
 
                         InputState(),
 
-                        rx.button("Apply Filters", on_click=rx.window_alert("Get Started")),
+                        rx.button("Apply Filters", on_click=rx.window_alert("Get Started"),style=st.style_button),
 
                         align="left",
                         justify="start",
                         padding_x="0.5rem",
                         width="100%",
-                        style=style.color_style,
+                        style=st.color_style,
                     ),
                     spacing="5",
                     width="100%",
                 ),
-        height="100%",
+        height="100vh",
         width="30em",
-        margin="-12px",
-        padding="1.5em",    
+        padding="1.5em",   
         background_color="#E0E7FF",
     ),
