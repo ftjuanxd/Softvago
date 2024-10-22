@@ -4,11 +4,11 @@ from ..template import template
 
 from ..packages.Sign_Forms import Sign as sg
 
-@rx.page(title="Sign In",route="/Sign-in")
+@rx.page(title="Sign Up",route="/Sign-Up")
 @template
 def index():
     return rx.center(
-        sg.sign("Sign In"),
+        sg.sign("Sign Up"),
         width="100vw"
     )
-      
+       

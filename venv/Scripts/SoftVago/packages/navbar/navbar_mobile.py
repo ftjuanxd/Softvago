@@ -32,7 +32,7 @@ def sidebar_items() -> rx.Component:
         sidebar_item("Home", "library-big", "/"),
         sidebar_item("Job Listings", "text-search", "/job"),
         sidebar_item("Sign In", "log-in", "/Sign-in"),
-        sidebar_item("Sign Up", "user-plus", "/job"),
+        sidebar_item("Sign Up", "user-plus", "/Sign-Up"),
         spacing="1", 
         width="100%",
     )

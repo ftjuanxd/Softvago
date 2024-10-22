@@ -1,6 +1,17 @@
 import reflex as rx
 
-config = rx.Config(
+
+class AppConfig(rx.Config):
+    pass
+
+config = AppConfig(
     app_name="SoftVago",
-    api_url="http://SoftVago.com:8000",
+    db_url="http://SoftVago.com:8000",
+    env=rx.Env.DEV,
+    tailwind={
+        "theme": {
+            "extend": {},
+        },
+        "plugins": ["@tailwindcss/typography"],
+    },
 )

@@ -24,7 +24,7 @@ def navbar_pc() -> rx.Component:
                     navbar_link("Home", "/"),
                     navbar_link("Job Listings", "/job"),
                     navbar_link("Sign In", "/Sign-in"),
-                    navbar_link("Sign Up", "/job"),
+                    navbar_link("Sign Up", "/Sign-Up"),
                     justify="end",
                     spacing="5",
                 ),

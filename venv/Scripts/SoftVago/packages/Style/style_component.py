@@ -6,12 +6,13 @@ import reflex as rx
 color_style = { "color":"#1E3A8A"}
 padding_inputs = "12px",
 color = "#94A3B8",
+color_icon="#0a8bbf",
 
 
 style_button = dict(
     background = "#60A5FA",
     height="36px",
-    border_radius="6px"
+    border_radius="6px",
 )
 
 #Style filters
