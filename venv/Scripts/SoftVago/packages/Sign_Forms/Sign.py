@@ -103,14 +103,14 @@ def sign(opc:str) -> rx.Component:
                     ),
                     rx.cond(
                         opc == "Sign In",
-                        rx.button("Sign In", size="3", width="100%",bg="#60A5FA"),
-                        rx.button("Sign Up", size="3", width="100%",bg="#1E3A8A"),    
+                        rx.button("Sign In", size="3", width="100%",bg="#60A5FA",on_click=rx.redirect("/Dashboard")),
+                        rx.button("Sign Up", size="3", width="100%",bg="#1E3A8A",on_click=rx.redirect("/Sign-in")),    
                         ),
                     rx.cond(
-                        opc == "Sign In",
+                        opc == "Sign Up",
                         rx.center(
                             rx.text("Already registered?", size="3",color="#1F2937"),
-                            rx.link("Sign in", href="#", size="3"),
+                            rx.link("Sign in", href="/Sign-in", size="3"),
                             opacity="0.8",
                             spacing="2",
                             direction="row",

@@ -3,19 +3,12 @@ import os
 
 #Si la direccion de la imagen es dinamica y cambiante se usa esto rx.get_upload_url(#link o url) 
 
-def cards(propuesta="Analista de Datos",img="/fondo.jpg",empresa="Google",location="Remote",Hours="Full-time",Salary="$100k - $130k") -> rx.Component:
+def cards(propuesta="Analista de Datos",empresa="Google",location="Remote",Hours="Full-time",Salary="$100k - $130k",opc="") -> rx.Component:
 
     return rx.card(
             rx.vstack(
-                rx.image(
-                    src=img,
-                    width="70%",
-                    height="auto",
-                    border_radius="10px",
-                    padding_right="25px"
-                ),
                 rx.flex(
-                    rx.heading(propuesta, size="4", mb="1",color="#1E3A8A"),
+                    rx.heading(propuesta, size="6",color="#1E3A8A"),
                     direction="row",
                     justify="between",
                     width="100%",
@@ -35,13 +28,14 @@ def cards(propuesta="Analista de Datos",img="/fondo.jpg",empresa="Google",locati
                 rx.divider(width="100%"),
                 rx.flex(
                     rx.flex(
-                        rx.button("Ver mas"),
+                        rx.button("Ver mas",on_click=rx.redirect("/Card_Open")),
                         direction="column",
                     ),
-                    direction="row",
+                    direction="row",    
                     justify="between",
                     width="100%",
                 ),
                 width="47vh",#47
             ),
+            margin_bottom="12px"
         )

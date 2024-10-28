@@ -7,7 +7,7 @@ color_style = { "color":"#1E3A8A"}
 padding_inputs = "12px",
 color = "#94A3B8",
 color_icon="#0a8bbf",
-
+shadow="rgba(0, 0, 0, 0.15) 0px 6px 16px"
 
 style_button = dict(
     background = "#60A5FA",
@@ -47,4 +47,11 @@ style_input_Side = style_placeholder |  {
         "background":"#fff",
         "color":"#000"
     }
+}
+
+#Style Card-Open
+padding_open_card = ".5em"
+style_card_open = {
+    "box_shadow":shadow,
+    "color":"#1F2937"
 }

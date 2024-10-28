@@ -9,14 +9,14 @@ def navbar_pc() -> rx.Component:
     return   rx.hstack(
                 rx.hstack(
                     rx.flex(
-                        rx.icon("computer",stroke_width=3),
+                        rx.icon("computer",stroke_width=3,color="white"),
                         gap = "2",
                         width="2.25em",
                         height="auto",
                         border_radius="25%",
                     ),
                     rx.heading(
-                        "SoftVago", size="7", weight="bold"
+                        "SoftVago", size="7", weight="bold", color="white"
                     ),
                     align_items="center",
                 ),

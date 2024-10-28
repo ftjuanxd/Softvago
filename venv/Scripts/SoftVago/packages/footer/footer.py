@@ -36,4 +36,5 @@ def footer() -> rx.Component:
             ),
             spacing="5",
             width="100%",
+            color="white"
         )

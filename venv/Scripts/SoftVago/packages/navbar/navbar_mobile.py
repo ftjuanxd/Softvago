@@ -42,7 +42,7 @@ def sidebar() -> rx.Component:
     return rx.box(
             rx.drawer.root(
                 rx.drawer.trigger(
-                    rx.icon("align-justify", size=30)
+                    rx.icon("align-justify", size=30,color="white")
                 ),
                 rx.drawer.overlay(z_index="5"),
                 rx.drawer.portal(
@@ -50,7 +50,7 @@ def sidebar() -> rx.Component:
                         rx.vstack(
                             rx.box(
                                 rx.drawer.close(
-                                    rx.icon("x", size=30)
+                                    rx.icon("x", size=30,color="white")
                                 ),
                                 width="100%",
                             ),
@@ -72,6 +72,7 @@ def sidebar() -> rx.Component:
                             sidebar_items(),
                             spacing="5",
                             width="100%",
+                            color="white"
                         ),
                         top="auto",
                         right="auto",

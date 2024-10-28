@@ -12,7 +12,7 @@ def filter():
                     width="100%",
                     style = {**sf.style_input_filter,**sf.style_placeholder}
                 ),
-                rx.button("Get Started", on_click=rx.window_alert("Get Started"),position="absolute",top="11px",right="12px",z_index="1"),
+                rx.button("Get Started", on_click=rx.redirect("/job"),position="absolute",top="11px",right="12px",z_index="1"),
                 position="relative",
                 width="100%",
                 padding="12px",

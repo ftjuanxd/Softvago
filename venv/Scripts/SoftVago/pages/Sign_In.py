@@ -7,8 +7,11 @@ from ..packages.Sign_Forms import Sign as sg
 @rx.page(title="Sign In",route="/Sign-in")
 @template
 def index():
-    return rx.center(
+    return rx.stack(
         sg.sign("Sign In"),
+        margin_y="158px",
+        align="center",
+        justify="center",
         width="100vw"
     )
       
