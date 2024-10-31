@@ -1,6 +1,6 @@
 import reflex as rx
 
-
+from ..Sign_Forms.State import LoginState
 
 def navbar():
     return rx.flex(
@@ -16,8 +16,10 @@ def navbar():
         rx.spacer(),
         rx.hstack(
             rx.color_mode.button(),
+            rx.icon(tag="power",on_click=LoginState.logout,color="crimson",cursor=""),
             align="center",
             spacing="3",
+            
         ),
         spacing="2",
         flex_direction=["column", "column", "row"],
