@@ -11,8 +11,6 @@ from ..packages.Content import grid_cards as gc
 def index():
     return rx.hstack(
         sd.sidebar(),
-        gc.grid_cards(12),
+        gc.grid_cards(20,height=800),
         width="100%",
-        margin_top="-12px",
-        margin_bottom="-24px"
     )

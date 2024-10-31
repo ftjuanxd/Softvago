@@ -1,9 +1,11 @@
 import reflex as rx
 
+
+
 def navbar():
     return rx.flex(
         rx.badge(
-            rx.icon(tag="table-2", size=28),
+            rx.icon(tag="square-chevron-right", size=28),
             rx.heading("SoftVago", size="6"),
             color_scheme="blue",
             radius="large",
@@ -13,7 +15,6 @@ def navbar():
         ),
         rx.spacer(),
         rx.hstack(
-            rx.logo(),
             rx.color_mode.button(),
             align="center",
             spacing="3",

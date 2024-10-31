@@ -1,7 +1,7 @@
 import reflex as rx
 from .cards import cards as cd
 
-def grid_cards(range:int=12, opc:str="no_open") -> rx.Component:
+def grid_cards(range:int=12, opc:str="no_open",height:int=600) -> rx.Component:
 
     return rx.vstack(
         rx.cond(
@@ -41,8 +41,9 @@ def grid_cards(range:int=12, opc:str="no_open") -> rx.Component:
                     padding_right="6px",
                     padding_top="2px",
                 ), 
-                type="always",
+                type="hover",
                 scrollbars="vertical",
+                style={"height":height},
                 width="100%"
             ),
             rx.grid(

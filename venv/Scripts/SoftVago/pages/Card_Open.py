@@ -13,6 +13,5 @@ def index():
         ct.content(),
         gd.grid_cards(4,"open"),
         width="100vw",
-        margin_top="-12px",
-        margin_bottom="-19px"
+        margin_bottom="6px"
     )

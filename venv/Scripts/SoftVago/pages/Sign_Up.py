@@ -10,6 +10,7 @@ def index():
     return rx.stack(
             sg.sign("Sign Up"),
             margin_y="106px",
+            padding_bottom="2.3em",
             align="center",
             justify="center",
             width="100vw"

@@ -16,5 +16,6 @@ def index():
         dn.banner(),
         sh.filter(),
         gc.grid_cards(),
+        margin_bottom="6px",
         width ="100%"
     )
